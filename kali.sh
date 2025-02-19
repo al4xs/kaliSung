@@ -378,7 +378,7 @@ if [[ $quest == "y" || $quest == "yes" || $quest == "Y" ]]; then
         else
                 echo ""
                 echo -e "${White} [${Red}-${White}] Firefox is not installed, installing Firefox"
-                sudo apt install firefox -y
+                sudo apt install firefox-esr -y
                 cp -r ${RUTE}/home/firefox/chrome/ "$(locate xulstore.json | grep '.mozilla/firefox' | cut -d '/' -f 1-6)/"
                 sleep 2
         fi
